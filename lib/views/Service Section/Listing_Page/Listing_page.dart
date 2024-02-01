@@ -30,7 +30,6 @@ class _ListingState extends State<Listing> with TickerProviderStateMixin {
     var h = MediaQuery.of(context).size.height;
 
     return Scaffold(
-
       appBar: AppBar(
         backgroundColor: const Color(0xFF08215E),
         title: PlainText(
@@ -51,7 +50,7 @@ class _ListingState extends State<Listing> with TickerProviderStateMixin {
         actions: [
           InkWell(
             onTap: () {
-             // Get.to(() => FilterScreen());
+              // Get.to(() => FilterScreen());
             },
             child: Icon(
               Icons.add_box_rounded,
@@ -71,7 +70,7 @@ class _ListingState extends State<Listing> with TickerProviderStateMixin {
           const SizedBox(width: 15),
         ],
       ),
-      body:  Padding(
+      body: Padding(
         padding: const EdgeInsets.only(top: 10),
         child: SingleChildScrollView(
           child: Column(
@@ -87,7 +86,7 @@ class _ListingState extends State<Listing> with TickerProviderStateMixin {
                   ),
                   child: TabBar(
                     indicatorSize: TabBarIndicatorSize.tab,
-                    dividerHeight: 0,
+                    // dividerHeight: 0,
                     indicatorWeight: 0,
                     labelPadding: const EdgeInsets.all(5),
                     controller: tabController,
@@ -169,28 +168,26 @@ class _ListingState extends State<Listing> with TickerProviderStateMixin {
                       physics: const BouncingScrollPhysics(),
                       controller: tabController,
                       children: [
-                            SizedBox(
-                              height: h * 0.67,
-                              child: buildProductTab(3),
-                            ),
-
-                            SizedBox(
-                              height: h * 0.67,
-                              child: buildProductTab(3),
-                            ),
-                            SizedBox(
-                              height: h * 0.67,
-                              child: buildProductTab(3),
-                            ),
-
-                            SizedBox(
-                              height: h * 0.67,
-                              child: buildProductTab(3),
-                            ),
-                            SizedBox(
-                              height: h * 0.67,
-                              child: buildProductTab(3),
-                            ),
+                        SizedBox(
+                          height: h * 0.67,
+                          child: buildProductTab(3),
+                        ),
+                        SizedBox(
+                          height: h * 0.67,
+                          child: buildProductTab(3),
+                        ),
+                        SizedBox(
+                          height: h * 0.67,
+                          child: buildProductTab(3),
+                        ),
+                        SizedBox(
+                          height: h * 0.67,
+                          child: buildProductTab(3),
+                        ),
+                        SizedBox(
+                          height: h * 0.67,
+                          child: buildProductTab(3),
+                        ),
                       ],
                     ),
                   ),
@@ -220,22 +217,28 @@ class _ListingState extends State<Listing> with TickerProviderStateMixin {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Padding(padding: const EdgeInsets.all(15),
+                  Padding(
+                    padding: const EdgeInsets.all(15),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(
                           height: 60,
                           width: 60,
-                          child: Image.asset("assets/images/service.png",fit: BoxFit.fill,),
+                          child: Image.asset(
+                            "assets/images/service.png",
+                            fit: BoxFit.fill,
+                          ),
                         ),
                         const SizedBox(width: 20),
                         const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            BoldText(name: "Lorem ipsum door sit amet\n consec"
-                                "tetur adpisiscing", fontsize: 14),
+                            BoldText(
+                                name: "Lorem ipsum door sit amet\n consec"
+                                    "tetur adpisiscing",
+                                fontsize: 14),
                             PlainText(
                               name: "Classic Cleaning Home\n"
                                   "ABCD:F-R-Dp-016",
@@ -243,20 +246,20 @@ class _ListingState extends State<Listing> with TickerProviderStateMixin {
                               color: Colors.grey,
                             ),
                             SizedBox(width: 10),
-                            PlainText(name: "Listing Date:02/12/2023", fontsize: 15),
+                            PlainText(
+                                name: "Listing Date:02/12/2023", fontsize: 15),
                             SizedBox(width: 10),
                             BoldText(name: "Time:1hrs", fontsize: 17),
                             SizedBox(width: 10),
-                            BoldText(name: "Listing Price:TZS1500", fontsize: 17),
+                            BoldText(
+                                name: "Listing Price:TZS1500", fontsize: 17),
                             SizedBox(width: 10),
                             BoldText(name: "Final Price:TZS1500", fontsize: 17),
-                    
                           ],
                         ),
                       ],
                     ),
                   ),
-
                 ],
               ),
             ),
@@ -265,7 +268,6 @@ class _ListingState extends State<Listing> with TickerProviderStateMixin {
       ),
     );
   }
-
 
   Widget buildTabBar(String count, String label) {
     return SizedBox(

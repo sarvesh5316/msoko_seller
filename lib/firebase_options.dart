@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDCE8Y_ou3CKBSRkbXj_qIkOBX2tHBiBAY',
-    appId: '1:1050375667505:web:ada8849219c6d47d387a10',
-    messagingSenderId: '1050375667505',
-    projectId: 'msoko-seller',
-    authDomain: 'msoko-seller.firebaseapp.com',
-    storageBucket: 'msoko-seller.appspot.com',
-    measurementId: 'G-J8FH55NC39',
+    apiKey: 'AIzaSyALJwqtFTWTAzP0sLAt9EtBj_aLq-Z7bWE',
+    appId: '1:14401969118:web:e35ebd5155165b178d9b4f',
+    messagingSenderId: '14401969118',
+    projectId: 'msoko5316',
+    authDomain: 'msoko5316.firebaseapp.com',
+    storageBucket: 'msoko5316.appspot.com',
+    measurementId: 'G-PGT7QR2DZR',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBlaQ_2bifPPGaAv3W34veUOfCREfvO2IU',
-    appId: '1:1050375667505:android:8296936e3ad63cc2387a10',
-    messagingSenderId: '1050375667505',
-    projectId: 'msoko-seller',
-    storageBucket: 'msoko-seller.appspot.com',
+    apiKey: 'AIzaSyBoRnxmIFD_GoQ4rKbFucMsFhyyj_9eXLc',
+    appId: '1:14401969118:android:18f445bb753708b58d9b4f',
+    messagingSenderId: '14401969118',
+    projectId: 'msoko5316',
+    storageBucket: 'msoko5316.appspot.com',
   );
 }

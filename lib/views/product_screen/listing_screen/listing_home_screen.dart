@@ -104,7 +104,7 @@ class _ListingHomeScreenState extends State<ListingHomeScreen>
               height: 80,
               child: TabBar(
                 indicatorSize: TabBarIndicatorSize.tab,
-                dividerHeight: 0,
+
                 indicatorWeight: 0,
                 labelPadding: EdgeInsets.zero,
                 controller: tabController,
